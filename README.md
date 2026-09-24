@@ -28,6 +28,13 @@ For more details on each of these attacks, read [`Fermat`](notes/02-fermat.md), 
 
 # How to Run
 
+Copying the repository
+
+```
+git clone https://github.com/wintersecret7/RSA-Cryptography.git
+cd RSA-Cryptography
+```
+
 From the repository root, create and activate a virtual environment, then install pytest:
 
 ```
