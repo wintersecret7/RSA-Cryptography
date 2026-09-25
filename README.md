@@ -1,4 +1,4 @@
-# The RSA Cryptosystem and some of its specific weaknesses
+# The RSA Cryptosystem and some of its weaknesses
 
 The public key of textbook RSA is a pair `(n, e)`, where `n = pq` is a product of two distinct odd primes. Encryption of a message `m` is `c ≡ m^e (mod n)`. The private exponent `d` is generated in one of two ways: `d_λ ≡ e^{-1} (mod λ(n))`, or `d_φ ≡ e^{-1} (mod φ(n))`, where `λ` is the Carmichael function and `φ` is Euler's totient. Recovering `d` requires `λ(n)` or `φ(n)`, and computing either from `n` alone is equivalent to factoring `n`. That equivalence is what makes the cryptosystem strong. However, such a strong system still has its weaknesses. We will discuss three such vulnerabilities, and the attack that follows from each.
 
